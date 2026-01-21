@@ -36,10 +36,6 @@ The project is divided into five distinct stages: Data Gathering, Preprocessing,
 * Jupyter Notebook
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/yourusername/repo-name.git](https://github.com/yourusername/repo-name.git)
-
 2. Install the required Python packages (ensure you have sentence-transformers, pandas, numpy, scikit-learn, beautifulsoup4, and matplotlib installed).
 
 ### Usage Instructions
