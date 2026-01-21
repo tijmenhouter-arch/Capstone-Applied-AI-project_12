@@ -1,3 +1,68 @@
-Glossary Intergovernmental Panel on Climate Change: https://apps.ipcc.ch/glossary/
+## 📄 Overview
 
-The UNESCO World Heritage List: https://whc.unesco.org/en/list/
+This project analyzes how Climate Change Adaptation concepts are represented in the management plans of the 11 Dutch UNESCO World Heritage sites. By leveraging semantic search models (LaBSE, MiniLM, MPNet), the project identifies specific intersections between scientific terminology (derived from the IPCC) and practical management policies.
+
+## 📂 Project Structure
+
+The project is divided into five distinct stages: Data Gathering, Preprocessing, Embedding, Similarity Calculation, and Visualization.
+
+| File Name | Description |
+| :--- | :--- |
+| `WG_MPs_Extraction (first_Must).ipynb` | **Preprocessing:** Converts PDF management plans into raw text and chunks them for analysis. |
+| `Gathering IPCC concepts.ipynb` | **Concept Extraction:** Cleans the IPCC AR6 glossary HTML and extracts concepts/definitions to CSV/JSON. |
+| `MPs_extraction_LaBSE_embedding.ipynb` | **Embedding:** Generates embeddings using the LaBSE model. |
+| `MPs_extraction_MiniLMv6_embedding.ipynb` | **Embedding:** Generates embeddings using the MiniLM-L6-v2 model. |
+| `MPs_extraction_mpnet_embedding.ipynb` | **Embedding:** Generates embeddings using the MPNet model. |
+| `cosine similarity.ipynb` | **Analysis:** Calculates Cosine Similarity and Z-Scores between MP chunks and IPCC concepts. |
+| `Visualizations.ipynb` | **Results:** Generates visual representations of the matched concepts and their relevance. |
+
+## 🛠️ Methodology
+
+### 1. Data Collection
+* **Target Documents:** 11 Management Plans (PDF) from the [UNESCO World Heritage List](https://whc.unesco.org/en/list/).
+* **Reference Glossary:** The IPCC AR6 Glossary gathered from [SemanticClimate](https://github.com/petermr/semanticClimate).
+
+### 2. Pipeline
+1.  **Text Extraction:** PDFs are converted to raw text and split into manageable chunks.
+2.  **Glossary Parsing:** The IPCC HTML glossary is parsed to create a structured dataset of key concepts and definitions.
+3.  **Vector Embedding:** Both the document chunks and the IPCC concepts are vectorized using three distinct Sentence Transformer models to compare performance.
+4.  **Semantic Matching:** We calculate the **Cosine Similarity** between every document chunk and every IPCC concept.
+5.  **Significance Testing:** A **Z-Score** is calculated to filter for statistically significant matches, isolating relevant adaptation concepts.
+
+## 🚀 Getting Started
+
+### Prerequisites
+* Python 3.x
+* Jupyter Notebook
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/yourusername/repo-name.git](https://github.com/yourusername/repo-name.git)
+
+2. Install the required Python packages (ensure you have sentence-transformers, pandas, numpy, scikit-learn, beautifulsoup4, and matplotlib installed).
+
+### Usage Instructions
+To replicate the study, run the notebooks in the following strict order:
+1. **Preprocess Documents**: Run WG_MPs_Extraction (first_Must).ipynb to transform the PDFs into text chunks. (This is optional as this will also be done in step 3.)
+2. **Prepare Glossary**: Run Gathering IPCC concepts.ipynb to generate the clean CSV/JSON of IPCC terms.
+3. **Generate Embedding**: Run one (or all) of the embedding notebooks:
+      MPs_extraction_LaBSE_embedding.ipynb
+      MPs_extraction_MiniLMv6_embedding.ipynb
+      MPs_extraction_mpnet_embedding.ipynb
+4. **Analyze Similarity**: Run cosine similarity.ipynb to compute matches, Z-scores and export results
+5. **View Results**: Run Visualizations.ipynb to see the final charts and data analysis.
+
+
+## 📊 Data Sources
+* **UNESCO Management Plans**: Retrieved from the UNESCO World Heritage Centre.
+* **IPCC Glossary**: Derived from the IPCC AR6 Report via SemanticClimate.             (https://raw.githubusercontent.com/petermr/semanticClimate/main/ipcc/ar6/test/total_glossary/new_total_demo.html")
+
+
+
+
+
+
+
+
+
