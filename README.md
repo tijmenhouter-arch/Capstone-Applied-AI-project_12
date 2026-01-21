@@ -41,7 +41,7 @@ The repository is organized into code (notebooks) and data artifacts (output fol
 ## 🚀 Getting Started
 
 ### Prerequisites
-* Python 3.x
+* Python 
 * Jupyter Notebook
 
 ### Installation
