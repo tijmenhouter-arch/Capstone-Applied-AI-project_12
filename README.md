@@ -36,7 +36,7 @@ The project is divided into five distinct stages: Data Gathering, Preprocessing,
 * Jupyter Notebook
 
 ### Installation
-2. Install the required Python packages (ensure you have sentence-transformers, pandas, numpy, scikit-learn, beautifulsoup4, and matplotlib installed).
+Install the required Python packages (ensure you have sentence-transformers, pandas, numpy, scikit-learn, beautifulsoup4, and matplotlib installed).
 
 ### Usage Instructions
 To replicate the study, run the notebooks in the following strict order:
