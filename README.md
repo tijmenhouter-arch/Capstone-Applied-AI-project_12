@@ -44,6 +44,7 @@ The repository is organized into code (notebooks) and data artifacts (output fol
 ### Prerequisites
 * Python 
 * Jupyter Notebook
+* Downloaded Management plans in the same folder. Links for downloads can be found under "Issues"
 
 ### Installation
 Install the required Python packages (ensure you have sentence-transformers, pandas, numpy, scikit-learn, beautifulsoup4, and matplotlib installed).
@@ -63,7 +64,7 @@ To replicate the study, run the notebooks in the following strict order:
 
 ## 📊 Data Sources
 * **UNESCO Management Plans**: Retrieved from the UNESCO World Heritage Centre.
-* **IPCC Glossary**: Derived from the IPCC AR6 Report via SemanticClimate.             (https://raw.githubusercontent.com/petermr/semanticClimate/main/ipcc/ar6/test/total_glossary/new_total_demo.html")
+* **IPCC Glossary**: Derived from the IPCC AR6 Report via SemanticClimate.(https://raw.githubusercontent.com/petermr/semanticClimate/main/ipcc/ar6/test/total_glossary/new_total_demo.html")
 
 
 
