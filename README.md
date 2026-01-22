@@ -29,7 +29,7 @@ The repository is organized into code (notebooks) and data artifacts (output fol
 ## 🛠️ Methodology
 
 ### 1. Data Collection
-* **Target Documents:** 11 Management Plans (PDF) from the [UNESCO World Heritage List](https://whc.unesco.org/en/list/).
+* **Target Documents:** 11 Dutch Management Plans (PDF) from the [UNESCO World Heritage List](https://whc.unesco.org/en/list/).
 * **Reference Glossary:** The IPCC AR6 Glossary gathered from [SemanticClimate](https://github.com/petermr/semanticClimate).
 
 ### 2. Pipeline
