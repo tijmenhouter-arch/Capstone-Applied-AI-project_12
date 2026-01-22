@@ -58,6 +58,7 @@ To replicate the study, run the notebooks in the following strict order:
       MPs_extraction_mpnet_embedding.ipynb
 4. **Analyze Similarity**: Run cosine similarity.ipynb to compute matches, Z-scores and export results
 5. **View Results**: Run Visualizations.ipynb to see the final charts and data analysis.
+6. **Evaluate Chunk ID's**: Run Chunk_Evaluation.ipynb retrieve a detailed analysis of a chosen Chunk ID.
 
 
 ## 📊 Data Sources
