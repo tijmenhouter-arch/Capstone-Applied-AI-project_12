@@ -16,6 +16,7 @@ The repository is organized into code (notebooks) and data artifacts (output fol
 | `MPs_extraction_mpnet_embedding.ipynb` | **Embedding:** Generates embeddings using the MPNet model. |
 | `cosine similarity.ipynb` | **Analysis:** Calculates Cosine Similarity and Z-Scores between MP chunks and IPCC concepts. |
 | `Visualizations.ipynb` | **Results:** Generates visual representations of the matched concepts and their relevance. |
+| `Chunk_Evaluation.ipynb` | **Evaluation:** It allows a user to input a unique “Chunk ID” and retrieve a detailed analysis |
 
 ### Data & Outputs
 | Folder Name | Description |
